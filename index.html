@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Field Notes — A Deployment Exercise</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero__eyebrow">MODULE 07 / SERVERS &amp; DEPLOYMENT</div>
+    <h1 class="hero__title">From localhost<br>to live URL.</h1>
+    <p class="hero__sub">A one-page site, pushed through Git, served by GitHub Pages — proof that the shortest distance between a laptop and the internet is a few clean commands.</p>
+    <a class="hero__link" href="#log">Read the deployment log ↓</a>
+  </header>
+
+  <main>
+    <section class="panel" id="log">
+      <h2 class="panel__title">Deployment log</h2>
+      <ol class="log">
+        <li class="log__row">
+          <span class="log__time">00:00</span>
+          <span class="log__text">Initialized a Git repository in the project folder.</span>
+        </li>
+        <li class="log__row">
+          <span class="log__time">00:01</span>
+          <span class="log__text">Added <code>index.html</code> and <code>style.css</code>, then committed.</span>
+        </li>
+        <li class="log__row">
+          <span class="log__time">00:02</span>
+          <span class="log__text">Created a GitHub repository and pushed the <code>main</code> branch.</span>
+        </li>
+        <li class="log__row">
+          <span class="log__time">00:03</span>
+          <span class="log__text">Enabled GitHub Pages in repo settings, branch <code>main</code>, root folder.</span>
+        </li>
+        <li class="log__row">
+          <span class="log__time">00:04</span>
+          <span class="log__text">Site went live at the Pages URL — publicly reachable, no server to manage.</span>
+        </li>
+      </ol>
+    </section>
+
+    <section class="panel panel--quiet">
+      <h2 class="panel__title">Why this stack</h2>
+      <p class="panel__body">No build step, no backend, no bill. A static page is the right amount of infrastructure for a static page — Git tracks the history, GitHub hosts the files, and Pages serves them over HTTPS the moment you flip a setting.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>Built for Formative Assessment 6 · Deployed via GitHub Pages</span>
+  </footer>
+
+</body>
+</html>
